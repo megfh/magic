@@ -103,4 +103,14 @@ body {
   animation-timing-function: ease-in-out; 
 }
 
+#code {
+  position: absolute;
+	bottom: 0;
+  right: 0;
+  margin-right: 15px; 
+  margin-bottom: 15px; 
+  font-size: 15px; 
+  font-family: 'Hepta Slab', serif;
+  color: #fcba03; 
+}
 
