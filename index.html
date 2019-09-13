@@ -18,7 +18,7 @@
   let pressed = []; 
   const secretCode = "lumos"; 
   const superSecret = "LUMOS MAXIMA"
-  console.log(`Try casting a spell to shed some light on the situation, like ${secretCode} or ${superSecret}`); 
+  console.log(`Try casting a spell to shed some light on the situation, like "${secretCode}" or "${superSecret}"`); 
   let wand = document.getElementById("light"); 
   let quote = document.getElementById("dumbledore"); 
   window.addEventListener("keyup", (e) => {
@@ -39,6 +39,7 @@
       setTimeout(() => {
         wand.classList.remove("lumos")
         quote.classList.remove("faded"); 
+        // remove "lumos" from end of array to avoid duplicate animations
         pressed.splice(-5, 5); 
       }, 5000); 
     }
